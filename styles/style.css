@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte-primaria: "Righteous", sans-serif;
+    --fonte-secundaria: "Roboto Condensed", sans-serif;
+
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #278CBF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.secao {
+    background-image: url('/img/2149930937.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-home {
+    width: 25%;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    position: relative;
+    z-index: 10; /* Ajuste conforme necessário */
+}
+
+.navegacao-cabecalho {
+    font-family: var(--fonte-secundaria);
+    font-style: bold;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-size: 1.25rem;
+}
+
+.navegacao-cabecalho:hover {
+    color: var(--cor-terciaria);
+    transition: 0.5s;
+}
+
+.nav {
+    display: flex;
+    gap: 9%;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 2%;
+}
+
+
+.botao {
+    font-family: var(--fonte-primaria);
+    display: flex;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 38px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 20%;
+    position: relative;
+    z-index: 10; /* Ajuste conforme necessário */
+}
+
+.botao:hover {
+    background-color: var(--cor-terciaria);
+    transition: 1s;
+    opacity: 95%;
+}
+
+/* section 1*/
+
+.o-que-fazemos {
+    background-color: var(--cor-primaria);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.o-que-fazemos h2 {
+    font-family: var(--fonte-primaria);
+    font-size: 3rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.imagem {
+    width: 100%;
+}
+
+.descricao-servicos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.servico {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: solid 0.5px #ffffffb6;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.servico:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.servico::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.servico:hover::before {
+    opacity: 1;
+}
+
+.servico h3 {
+    font-family: var(--fonte-primaria);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: var(--cor-terciaria);
+}
+
+.servico p {
+    font-family: var(--fonte-secundaria);
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/*section 2*/
+
+.como-fazemos {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.como-fazemos h2 {
+    font-family: var(--fonte-primaria);
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--cor-secundaria);
+}
+
+.linha-centralizada {
+    width: 50%;
+    height: 4px;
+    background-color: var(--cor-terciaria);
+    margin: 0 auto 40px auto; /* Centraliza a linha */
+}
+
+.etapas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.etapa {
+    background-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 0.5px #ffffffb6;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.etapa:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.etapa::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.etapa:hover::before {
+    opacity: 1;
+}
+
+.etapa h3 {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.etapa p {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/*section 3*/
+
+#por-que {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 40px 0;
+}
+
+#por-que .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#por-que h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+}
+
+#por-que .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#por-que .item {
+    background-color: var(--cor-primaria);
+    border: 1px solid #ffffffb6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(50% - 20px); /* Ajuste a largura conforme necessário */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+
+#por-que::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(39, 140, 191, 0.4); /* Cor com opacidade */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+#por-que .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#por-que h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+}
+
+#por-que p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: var(--fonte-secundaria);
+}
+
+/*carrosel*/
+
+#projetos {
+    padding: 40px 0;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 70vh;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    background-color: var(--cor-terciaria);
+    border: none;
+    color: var(--cor-secundaria);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.subtitulo {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    font-size: 2.5rem;
+    margin: 40px;
+}
+
+.carousel-indicators {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel-indicators .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.carousel-indicators .dot.active {
+    background-color: #278CBF;
+}
+
+
+/*footer*/
+
+.rodape {
+    background: radial-gradient(circle, #278CBF, #000000);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.rodape-logo {
+    width: 25%;
+}
+
+.texto-rodape {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+}
+
+/*Página 2*/
+
+.segunda-pagina {
+    background-color: var(--cor-primaria);
+}
+
+.sobre /*section 1*/ {
+    background-image: url("/img/image\ 1.png");
+    height: 10
+    0vh;
+}
+
+
+/*imagem illustra*/
+
+.imagem-pagina2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.significado {
+    justify-content: space-around;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    font-family: var(--fonte-primaria);
+}
+
+/*section 3*/
+
+.titulo-texto {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+h4 {
+    margin-top: 7.5%;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.titulo-texto2 {
+    margin: 5%;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 1.75rem;
+    font-weight: 300
+}
+
+/*section 4*/
+#nossa-equipe {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .equipe {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+  }
+  
+  .card {
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%; /* Mantém a proporção dos cards */
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .card .overlay p {
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: var(--fonte-primaria);
+    margin: 0;
+  }
+  
+
+  @media (max-width: 500px) {
+    /* Estilos para dispositivos com largura máxima de 500px */
+    body {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .container {
+        width: 100%; /* Ajusta a largura do container para preencher a tela */
+        padding: 10px; /* Adiciona padding para maior conforto em telas pequenas */
+    }
+
+    .header {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte no cabeçalho */
+    }
+
+    .item {
+        width: 100%; /* Faz com que os itens ocupem a largura total da tela */
+        margin: 5px 0; /* Ajusta a margem dos itens */
+    }
+
+    .navegacao-cabecalho {
+        font-size: 0.5rem;
+    }
+
+    .secao {
+        height: 40vh;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .botao {
+        font-size: 0.75rem;
+        width: 25%;
+    }
+
+    main {
+        margin: 2%;
+    }
+    
+    #por-que {
+        padding: 20px 0;
+    }
+
+    #por-que .container {
+        width: 90%;
+    }
+
+    #por-que h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    #por-que .content {
+        display: block; /* Mudança de flex para bloco para facilitar o empilhamento */
+    }
+
+    #por-que .item {
+        width: 100%; /* Os itens ocupam toda a largura disponível */
+        margin: 10px 0; /* Espaçamento ajustado para melhor alinhamento vertical */
+        padding: 15px;
+    }
+
+    #por-que h3 {
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+    }
+
+    #por-que p {
+        font-size: 0.875rem; /* Tamanho da fonte reduzido para melhor legibilidade em telas pequenas */
+        line-height: 1.4;
+    }
+
+    #projetos {
+        padding: 20px 0;
+    }
+
+    .carousel-container {
+        max-width: 100%; /* Ajusta a largura máxima para ocupar a tela inteira */
+        width: 90vw; /* Usa 90% da largura da viewport para garantir espaço em telas pequenas */
+    }
+
+    .carousel-item {
+        min-width: 100%;
+    }
+
+    .subtitulo {
+        font-size: 1.75rem; /* Reduz o tamanho da fonte do subtítulo para melhor se ajustar em telas pequenas */
+        margin: 20px;
+    }
+
+    button {
+        padding: 8px;
+        top: 45%; /* Ajusta a posição dos botões para centralizá-los melhor */
+    }
+
+    .carousel-indicators {
+        margin-top: 15px;
+    }
+
+    .carousel-indicators .dot {
+        height: 12px;
+        width: 12px; /* Reduz o tamanho dos indicadores */
+        margin: 0 4px;
+    }
+
+    .rodape {
+        flex-direction: column; /* Altera a direção do layout para empilhar os elementos verticalmente */
+        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+        padding: 20px 0; /* Adiciona padding para melhor espaçamento */
+    }
+
+    .rodape-logo {
+        width: 50%; /* Aumenta a largura do logo para torná-lo mais visível em telas pequenas */
+        margin-bottom: 15px; /* Adiciona margem inferior para espaçamento entre logo e texto */
+    }
+
+    .texto-rodape {
+        text-align: center; /* Centraliza o texto no rodapé */
+        font-size: 0.875rem; /* Reduz o tamanho da fonte para melhor legibilidade */
+        padding: 0 10px; /* Adiciona padding lateral para garantir que o texto não fique encostado nas bordas */
+    }
+
+    /*Pagina 2*/
+
+    .sobre /*section 1*/ {
+        background-image: url("/img/image\ 1.png");
+        height: 30vh; /* Reduz a altura para telas menores */
+        background-size: cover; /* Garante que a imagem cubra toda a seção */
+        background-position: center; /* Centraliza a imagem */
+    }
+
+    .imagem-pagina2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; /* Adiciona espaçamento em torno da imagem */
+    }
+
+    .significado {
+        justify-content: center; /* Centraliza o conteúdo */
+        padding: 20px; /* Adiciona espaçamento para evitar que o conteúdo fique muito apertado */
+    }
+
+    .subtitulo {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .text {
+        margin: 2%;
+        font-family: var(--fonte-primaria);
+        font-size: 0.875rem; /* Reduz o tamanho da fonte para melhor leitura em telas pequenas */
+        padding: 0 10px; /* Adiciona padding lateral para evitar que o texto encoste nas bordas */
+    }
+
+    /*section 3*/
+    .titulo-texto {
+        display: block; /* Empilha o título e o texto */
+        text-align: center;
+        gap: 10px;
+        padding: 20px; /* Adiciona espaçamento ao redor do texto */
+    }
+
+    h4 {
+        margin-top: 20px; /* Ajusta a margem superior */
+        font-size: 1.5rem; /* Reduz o tamanho da fonte */
+    }
+
+    .titulo-texto2 {
+        margin: 10px 0; /* Ajusta a margem para manter espaçamento consistente */
+        font-size: 1.25rem; /* Reduz o tamanho da fonte */
+        margin: 4%;
+    }
+
+    /*section 4*/
+    #nossa-equipe {
+        text-align: center;
+        margin: 20px 0; /* Reduz a margem superior e inferior */
+    }
+    
+    .equipe {
+        display: block; /* Empilha os cards verticalmente */
+        gap: 10px;
+    }
+    
+    .card {
+        width: 100%; /* Ocupa toda a largura disponível */
+        padding-bottom: 100%; /* Mantém a proporção dos cards */
+        margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+    }
+    
+    .card .overlay p {
+        font-size: 1rem; /* Ajusta o tamanho da fonte para o texto sobreposto */
+    }
+
+}
